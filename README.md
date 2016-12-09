@@ -16,7 +16,7 @@ import (
 
 func main() {
 	var np *int
-	// fmt.Println(*n) this cause panic
+	// fmt.Println(*np) this cause panic
 	fmt.Println(goptional.GetOrElse(np, 0))
 	// Output: 0
 
