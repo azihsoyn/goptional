@@ -17,3 +17,8 @@ func Example_getOrElse() {
 	fmt.Println(goptional.GetOrElse(np, 0))
 	// 1
 }
+
+func Example_string() {
+	fmt.Println(*goptional.String("hello"))
+	// Output: hello
+}

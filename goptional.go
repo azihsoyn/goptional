@@ -12,3 +12,7 @@ func GetOrElse(p, def interface{}) interface{} {
 	}
 	return rv.Elem().Interface()
 }
+
+func String(s string) *string {
+	return &s
+}

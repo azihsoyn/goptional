@@ -13,3 +13,10 @@ func BenchmarkGetOrElse(b *testing.B) {
 		goptional.GetOrElse(n, 0)
 	}
 }
+
+func BenchmarkString(b *testing.B) {
+	b.ResetTimer()
+	for i := 0; i < b.N; i++ {
+		goptional.String("string")
+	}
+}
