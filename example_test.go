@@ -22,3 +22,18 @@ func Example_string() {
 	fmt.Println(*goptional.String("hello"))
 	// Output: hello
 }
+
+func Example_int() {
+	fmt.Println(*goptional.Int(1))
+	// Output: 1
+}
+
+func Example_int64() {
+	fmt.Println(*goptional.Int64(1))
+	// Output: 1
+}
+
+func Example_bool() {
+	fmt.Println(*goptional.Bool(true))
+	// Output: true
+}
